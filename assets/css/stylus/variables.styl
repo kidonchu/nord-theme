@@ -1,0 +1,56 @@
+/* Color Scheme */
+$purple-dark  = #320961
+$purple-light = #7B54A8
+$purple       = #674397
+$yellow       = #EEBB4D
+$yellow-light = #FFDD92
+$grey         = #6E6E6E
+$grey-dark    = #303030
+$grey-light   = #EEE
+$grey-lighter = #EFEFEF
+$orange       = #eaba6d
+$red          = #e05048
+$mint         = #08b087
+
+$bg-color            = #fff
+$font-color          = #222
+$heading-color       = #333
+$link-color          = $purple-light
+
+$heading-font-weight = 700
+$body-font-weight    = 400
+
+$font-family-bitter   = "Bitter", "Helvetica", "Arial", sans-serif
+$font-family-opensans = "Open Sans", "Helvetica", "Arial", sans-serif
+$font-family-kreon    = "Kreon","Helvetica", "Arial", sans-serif
+
+$root-font-size      = 62.5%
+$font-size           = 1.6
+$font-size-px        = unit(10 * $font-size, px) /* Since we use 10px (16px * 62.5% = 10px), we need to multiply by 10 */
+$font-size-rem       = unit($font-size, rem)
+$line-height         = 1.5
+$line-height-px      = unit($font-size-px * $line-height, px)
+$line-height-rem     = unit($font-size-rem * $line-height, rem)
+
+/* Media queries breakpoints */
+$screen-xs         = 480px
+$screen-xs-min     = $screen-xs
+$screen-phone      = $screen-xs-min
+$screen-sm         = 768px
+$screen-sm-min     = $screen-sm
+$screen-tablet     = $screen-sm-min
+$screen-md         = 992px
+$screen-md-min     = $screen-md
+$screen-desktop    = $screen-md-min
+$screen-lg         = 1200px
+$screen-lg-min     = $screen-lg
+$screen-lg-desktop = $screen-lg-min
+$screen-xs-max     = ($screen-sm-min - 1)
+$screen-sm-max     = ($screen-md-min - 1)
+$screen-md-max     = ($screen-lg-min - 1)
+
+/*
+If accessing through small devices, we want to decrease the font size because
+it will be still readable.
+*/
+$mobile-mult = .8

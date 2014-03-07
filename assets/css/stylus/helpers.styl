@@ -1,0 +1,29 @@
+.clearfix:before, .clearfix:after
+	display table
+	content " "
+.clearfix:after
+	clear both
+
+.placeholder
+	border 0
+	display block
+	font-size 0
+	margin 0
+	padding 0
+	width 100%
+
+.no-ov
+	overflow hidden
+
+for i in 1 2 3 4 5 6 7 8 9 10
+	.spacer{i}
+		@extends .placeholder
+		scale height (i/2)
+
+.hidden
+	display none
+
+.divider
+	border-top 2px solid #eee
+	border-top 2px solid rgba(0, 0, 0, 0.1)
+	clear both
